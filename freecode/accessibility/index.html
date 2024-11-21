@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student">Info</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="Student" id="student">
+            <h2>Student Info</h2>
+            <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+                <label for="name">Name: <input type="text" id="name"></label>
+                <label for="email">Email: <input type="email" id="email"></label>
+                <label for="date">D.O.B.: <input type="date" id="date" placeholder="01/16/2024"></label> 
+            </form>
+            
+        </div>
+        <div class="html" id="html">
+            
+            <fieldset>
+                <h2>HTML</h2>
+                <h3 style="font-weight: 400;">Question #1</h3>
+                <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                <ul class="answers-list">
+                    <li>
+                      <label for="q1-a1">
+                        <input type="radio" id="q1-a1" name="q1" value="true" />
+                        True
+                      </label>
+                    </li>
+                    <li>
+                      <label for="q1-a2">
+                        <input type="radio" id="q1-a2" name="q1" value="false" />
+                        False
+                      </label>
+                    </li>
+                  </ul>
+            </fieldset>
+            <fieldset>
+                <h3 style="font-weight: 400;">Question #1</h3>
+                <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                <ul class="answers-list">
+                    <li>
+                      <label for="q2-a1">
+                        <input type="radio" id="q2-a1" name="q2" value="true" />
+                        True
+                      </label>
+                    </li>
+                    <li>
+                      <label for="q2-a2">
+                        <input type="radio" id="q2-a2" name="q2" value="false" />
+                        False
+                      </label>
+                    </li>
+                  </ul>
+            </fieldset>
+        </div>
+        <div class="css" id="css">
+            <h2>CSS</h2>
+            <p>Are you  frontend developer?</p>
+            <select name="customer" id="customer" required >
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <p>Do you have any questions: </p>
+            <textarea id="question" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+
+            <button type="submit">Send</button>
+        </div>
+    </main>
+    <footer>
+        <address>
+          <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+          San Francisco<br />
+          California<br />
+          USA
+        </address>
+      </footer>
+</body>
+</html>
